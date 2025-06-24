@@ -258,3 +258,35 @@ FEATURES
 recent ADDITIONS
 
 */
+
+/*
+EXPLORE
+*/
+#explore {
+  background-color: rgba(115, 66, 214, 0.1);
+}
+.explore__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+Footer
+*/
+#footer {
+  background-color: rgba(115, 66, 214, 0.1);
+  background-color: darkgray;
+}
+.footer {
+}
+.footer__logo {
+  width: 20%;
+  text-align: center;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+.no-cursor {
+  cursor: no-drop;
+}
