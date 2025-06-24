@@ -44,6 +44,9 @@ p {
 .purple {
   color: blueviolet;
 }
+.red {
+  color: red;
+}
 .nav__link {
   margin-left: 16px;
   text-decoration: none;
@@ -117,6 +120,9 @@ button:active {
   /* height: 100%;
   width: 100%;
   max-height: 50vh; */
+  text-align: center;
+}
+.header__img {
   z-index: 2;
 }
 .container {
@@ -202,11 +208,14 @@ FEATURES
 #features {
   background-color: rgba(115, 66, 214, 0.1);
   height: 100vh;
-  padding-top: 8vw;
+  padding: 0 8vw;
+}
+.section__title--features {
+  margin-top: 10%;
 }
 .books {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .book {
   width: 25%;
@@ -243,3 +252,9 @@ FEATURES
   color: darkgrey;
   padding-right: 6px;
 }
+
+/*
+
+recent ADDITIONS
+
+*/
