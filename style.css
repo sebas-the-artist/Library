@@ -101,6 +101,7 @@ p {
 }
 .menu__link {
   color: white;
+  font-size: 40px;
 }
 .menu__list {
   padding: 32px 0;
