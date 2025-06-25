@@ -79,6 +79,7 @@ p {
   text-align: center;
   border: none;
   color: blueviolet;
+  display: none;
 }
 
 .menu__backdrop {
@@ -92,13 +93,19 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  transition: all 400ms ease;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .menu--open .menu__backdrop {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
 }
-
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
 .menu__links {
   display: flex;
   flex-direction: column;
@@ -222,14 +229,14 @@ highlights
 }
 .highlight__wrapper {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
+  flex-wrap: wrap;
 }
 .highlight {
   padding: 0 24px;
   width: calc(100% / 3);
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 .highlight__para {
@@ -247,8 +254,8 @@ highlights
 .highlight__img {
   border: 2px solid rgba(138, 43, 226, 0.8);
   color: blueviolet;
-  width: 7vw;
-  height: 7vw;
+  width: 7.8vw;
+  height: 7.8vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,6 +270,7 @@ highlights
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /*
@@ -368,4 +376,38 @@ footer {
 }
 .no-cursor {
   cursor: no-drop;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .header__description {
+    padding: 0 24px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  button {
+    font-size: 18px;
+  }
+  .book {
+    width: 50%;
+  }
+}
+/* SMALL/large PHONES */
+@media (max-width: 550px) {
+  .nav__links {
+    display: none;
+  }
+  .btn__menu {
+    display: block;
+  }
+  .highlight {
+    width: 100%;
+  }
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
