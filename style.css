@@ -265,7 +265,9 @@ highlights
   animation: float 900ms infinite alternate-reverse ease;
 }
 .highlight__img:hover {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+  color: black;
+  cursor: url(assets/download.gif), pointer;
 }
 .highlight__subtitle {
   font-size: 20px;
