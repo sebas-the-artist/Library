@@ -52,12 +52,12 @@
 
                     <div class="books__header">
                         <h2 class="section__title books__header--title">
-                            All <span class="purple">Books</span>
+                            All Books
                         </h2>
-                        <select id="filter">
+                        <select id="filter" onchange="filterBooks(event)">
                             <option value="" disabled selected>Sort</option>
-                            <option value="LOW TO HIGH">Price, Low to High</option>
-                            <option value="HIGH TO LOW">Price, High to Low</option>
+                            <option value="LOW_TO_HIGH">Price, Low to High</option>
+                            <option value="HIGH_TO_LOW">Price, High to Low</option>
                             <option value="RATING">Rating</option>
                         </select>
                     </div>

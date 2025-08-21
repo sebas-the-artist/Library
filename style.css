@@ -506,10 +506,10 @@ select {
 }
 
 select {
-  background-color: #fff;
+  background-color: rgba(138, 43, 226);
   border-radius: 4px;
-  border: 1px solid #dcdfe6;
-  color: #606266;
+  border: none;
+  color: whitesmoke;
   height: 40px;
   line-height: 40px;
   outline: none;
